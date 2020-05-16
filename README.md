@@ -39,3 +39,6 @@ Sample starter project with required configuration such as express, typescript, 
 https://stackify.com/winston-logging-tutorial/
 https://www.codota.com/code/javascript/functions/winston/format
 https://medium.com/@jorgemcdev/node-express-app-typescript-tslint-prettier-airbnb-husky-c42588cbcbe3
+https://medium.com/@SigniorGratiano/express-error-handling-674bfdd86139
+https://wanago.io/2018/12/17/typescript-express-error-handling-validation/
+https://levelup.gitconnected.com/the-simplest-way-to-add-swagger-to-a-node-js-project-c2a4aa895a3c

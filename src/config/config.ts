@@ -7,5 +7,6 @@ export const config = {
     name: process.env.NAME || 'Server',
     port: process.env.PORT || 8080,
     host: process.env.HOST || '0.0.0.0',
+    basePath: process.env.BASE_PATH || '/api'
   },
 };

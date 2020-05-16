@@ -1,38 +1,37 @@
 import { Request, Response } from 'express';
 import * as departmentService from '../service/DepartmentService';
 import { Department } from '../domain/Department';
+import * as HttpStatus from 'http-status-codes';
 
 export function findAll(
   req: Request,
   res: Response
 ): Response<Array<Department>> {
-  const department: Array<Department> = departmentService.findAll();
-  return res.status(200).send({ data: department });
+  const departments: Array<Department> = departmentService.findAll();
+  return res.status(HttpStatus.OK).send({ data: departments });
 }
 
 export function create(req: Request, res: Response): Response<Department> {
   const department: Department = departmentService.create(req.body);
-  return res.status(201).send(department);
+  return res.status(HttpStatus.CREATED).send(department);
 }
 
 export function remove(
   req: Request,
   res: Response
 ): Response<Array<Department>> {
-  const department: Array<Department> | undefined = departmentService.remove(
-    Number(req.params.id)
-  );
-  return res.status(200).send({ data: department });
+  departmentService.remove(Number(req.params.id));
+  return res.status(HttpStatus.OK).send({ data: 'Department deleted successfully' });
 }
 
 export function update(req: Request, res: Response): Response<Department> {
   const department: Department = departmentService.update(req.body);
-  return res.status(200).send({ data: department });
+  return res.status(HttpStatus.OK).send({ data: department });
 }
 
 export function findOne(req: Request, res: Response): Response<Department> {
-  const department: Department | undefined = departmentService.findOne(
+  const department: Department = departmentService.findOne(
     Number(req.params.id)
   );
-  return res.status(200).send({ data: department });
+  return res.status(HttpStatus.OK).send({ data: department });
 }
