@@ -22,15 +22,15 @@ export const postEmployees = {
       description: 'Employee object that need to be added',
       required: true,
       schema: {
-        $ref: '#definitions/Employees',
-      },
-    },
+        $ref: '#definitions/Employees'
+      }
+    }
   ],
   responses: {
     201: {
-      description: 'Created',
-    },
-  },
+      description: 'Created'
+    }
+  }
 };
 
 export const putEmployees = {
@@ -42,22 +42,22 @@ export const putEmployees = {
       in: 'path',
       required: true,
       type: 'integer',
-      format: 'int64',
+      format: 'int64'
     },
     {
       in: 'body',
       name: 'body',
       required: true,
       schema: {
-        $ref: '#definitions/Employees',
-      },
-    },
+        $ref: '#definitions/Employees'
+      }
+    }
   ],
   responses: {
     200: {
-      description: 'Ok',
-    },
-  },
+      description: 'Ok'
+    }
+  }
 };
 
 export const deleteEmployee = {
@@ -69,14 +69,14 @@ export const deleteEmployee = {
       in: 'path',
       required: true,
       type: 'integer',
-      format: 'int64',
-    },
+      format: 'int64'
+    }
   ],
   responses: {
     200: {
-      description: 'OK',
-    },
-  },
+      description: 'OK'
+    }
+  }
 };
 
 export const getOneEmployee = {
@@ -90,14 +90,14 @@ export const getOneEmployee = {
       description: 'ID of employee to be return',
       required: true,
       type: 'integer',
-      format: 'int64',
-    },
+      format: 'int64'
+    }
   ],
   responses: {
     200: {
-      description: 'Ok',
-    },
-  },
+      description: 'Ok'
+    }
+  }
 };
 
 export const employees = {
@@ -121,6 +121,14 @@ export const employees = {
     },
     department: {
       $ref: '#definitions/Departments'
+    },
+    createdDate: {
+      type: 'string',
+      format: 'date-time'
+    },
+    updatedDate: {
+      type: 'string',
+      format: 'date-time'
     }
   }
 };

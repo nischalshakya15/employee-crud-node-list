@@ -41,5 +41,8 @@
     "swagger-ui-express": "^4.1.4",
     "winston": "^3.2.1",
     "winston-loggly-bulk": "^3.1.0"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
