@@ -48,7 +48,7 @@ Basic CRUD operation between two entities employee and department using array in
 
   `npm run build`
 
-- Specify the start script in **script** section of package.json file.
+- Specify the start script in **scripts** section of package.json file.
 
   ```json
    "scripts": {
