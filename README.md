@@ -1,6 +1,6 @@
 ## express-server-typescript
 
-Basic CRUD operation between two entities employee and department using array in express and nodejs. 
+Basic CRUD operation between two entities employee and department using array in express and nodejs.
 
 ## Prerequisites
 
@@ -33,6 +33,36 @@ Basic CRUD operation between two entities employee and department using array in
 ## Using Docker
 
 - `docker-compose --compatibility up -d`
+
+## Deploy into heroku
+
+- Login into heroku using your credentials.
+
+  `heroku login`
+
+- Create an app using **heroku-cli**
+
+  `heroku apps:create employee-crud-node-list`
+
+- Build the project.
+
+  `npm run build`
+
+- Specify the start script in **script** section of package.json file.
+
+  ```json
+   "scripts": {
+      "start": "node build/index.js"
+    }
+  ```
+
+- Push it into heroku.
+    
+    `git push heroku master`
+
+- Open the app.
+    
+    `heroku open`
 
 ### References
 
