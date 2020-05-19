@@ -1,6 +1,6 @@
 ## express-server-typescript
 
-Sample starter project with required configuration such as express, typescript, prettier, husky and docker.
+Basic CRUD operation between two entities employee and department using array in express and nodejs. 
 
 ## Prerequisites
 
@@ -28,11 +28,11 @@ Sample starter project with required configuration such as express, typescript, 
 
 - Open the browser
 
-  `http://localhost:8080`
+  `http://localhost:8080/api-docs`
 
 ## Using Docker
 
-- `docker-compose --compability up -d`
+- `docker-compose --compatibility up -d`
 
 ### References
 

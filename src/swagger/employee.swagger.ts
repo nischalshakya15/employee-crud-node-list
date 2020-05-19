@@ -115,10 +115,6 @@ export const employees = {
       type: 'string',
       format: 'string'
     },
-    email: {
-      type: 'string',
-      format: 'string'
-    },
     salary: {
       type: 'number',
       format: 'number'

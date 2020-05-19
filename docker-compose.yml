@@ -3,8 +3,8 @@ version: '3.3'
 services:
   express-server-typescript:
     build: .
-    image: express-server-typescript:v1
-    container_name: express-server-typescript
+    image: employee-crud-node-list:v1
+    container_name: employee-crud-node-list
     command: npm start
     ports:
       - 8080:8080

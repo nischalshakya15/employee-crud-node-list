@@ -1,6 +1,6 @@
 FROM node:14.2.0-alpine3.10
 
-WORKDIR /usr/src/express-server-typescript
+WORKDIR /usr/src/employee-crud-node-list
 
 COPY package*.json ./
 
